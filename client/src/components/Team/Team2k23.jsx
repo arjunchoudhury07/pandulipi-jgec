@@ -1,15 +1,15 @@
 import React from "react";
 import CoreTeam from "./CoreTeam";
-import CoreTeam2024 from "./CoreTeam2024";
+import Team from "./Team";
 import WebTeam from "./WebTeam";
 
-const Team = () => {
+function Team2k23() {
   return (
     <>
-      <CoreTeam2024 />
+      <CoreTeam />
       <WebTeam />
     </>
   );
-};
+}
 
-export default Team;
+export default Team2k23;

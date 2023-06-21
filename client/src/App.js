@@ -9,10 +9,12 @@ import Gallery from "./components/Gallery/Gallery";
 import BlogPage from "./components/BlogPage/BlogPage";
 import Library from "./components/eLibrary/Library";
 import Error from "./components/Error";
-import Login from './components/Authentication/Login';
-import Signup from './components/Authentication/Signup';
+import Login from "./components/Authentication/Login";
+import Signup from "./components/Authentication/Signup";
 import CreateBlog from "./components/BlogPage/CreateBlog";
 import { useAuthContext } from "./hooks/useAuthContext";
+import CoreTeam from "./components/Team/CoreTeam";
+import Team2k23 from "./components/Team/Team2k23";
 
 function App() {
   const { user } = useAuthContext();
@@ -24,12 +26,22 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery/*" element={<Gallery />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/createblog" element={user ? <CreateBlog /> : <Navigate to='/login' />} />
+        <Route
+          path="/createblog"
+          element={user ? <CreateBlog /> : <Navigate to="/login" />}
+        />
         <Route path="/elibrary" element={<Library />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/former-team" element={<Team2k23 />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/login" element={!user ? <Login /> : <Navigate to='/' />} />
-        <Route path="/signup" element={!user ? <Signup /> : <Navigate to='/' />} />
+        <Route
+          path="/login"
+          element={!user ? <Login /> : <Navigate to="/" />}
+        />
+        <Route
+          path="/signup"
+          element={!user ? <Signup /> : <Navigate to="/" />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
       {/* <ContactUs /> */}
