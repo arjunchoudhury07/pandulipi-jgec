@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import { NavLink } from "react-router-dom";
 import Kushal_Ghosh from "../../assets/team/coreteam2024/Kushal_Ghosh.jpeg";
 import Arka_Biswas from "../../assets/team/coreteam2024/Arka Biswas.jpeg";
 import Bisal_Kumar from "../../assets/team/coreteam2024/Bisal Kumar.jpeg";
@@ -171,7 +170,7 @@ const CoreTeam2024 = () => {
   ];
 
   return (
-    <div className="bg-[#EEEEEE] ">
+    <div className="bg-[#EEEEEE] w-screen">
       <h1 className="text-center text-5xl p-10 text-[#295C7A]">
         Meet the Core Team
       </h1>

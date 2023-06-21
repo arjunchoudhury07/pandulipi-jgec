@@ -55,12 +55,12 @@ const WebTeam = () => {
   const [currentInd, setCurrentInd] = useState(0);
 
   return (
-    <div className="bg-[#252b42]">
+    <div className="bg-[#252b42]  w-screen">
       <h1 className="text-center text-5xl p-10 text-[#fff]">
         Meet the Web Team
       </h1>
-      <div className="flex flex-col items-center pb-10">
-        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 pb-10 mt-4">
+      <div className="pb-10">
+        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 mt-4">
           {webTeamDetails.map((details, ind) => (
             <div className="flex flex-col items-center gap-4">
               <div className="relative">
@@ -97,14 +97,6 @@ const WebTeam = () => {
             </div>
           ))}
         </div>
-        <NavLink to="/former-team">
-          <button
-            type="button"
-            className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
-          >
-            Show 2k23 Team
-          </button>
-        </NavLink>
       </div>
       <Card
         onClose={() => setShow(false)}
