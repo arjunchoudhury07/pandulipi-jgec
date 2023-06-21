@@ -211,14 +211,6 @@ const CoreTeam2024 = () => {
             </div>
           ))}
         </div>
-        <NavLink to="/former-team">
-          <button
-            type="button"
-            className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-[#224e68] text-[#224e68] hover:scale-110 transition-all hover:bg-[#224e68] hover:text-white"
-          >
-            Show 2k23 Team
-          </button>
-        </NavLink>
       </div>
       <Card
         onClose={() => setShow(false)}
